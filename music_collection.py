@@ -16,3 +16,11 @@ class MusicCollection:
                 results.append(item)
 
         return results
+
+    def find_by_album(self, album):
+        results = []
+        for item in self.items:
+            if item.album.lower() == album.lower():
+                results.append(item)
+
+        return results
